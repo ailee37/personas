@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-areas: "left right";
+        grid-template-columns: repeat (2, 1fr);
+        gap: 5px;
+        /* background-color: #2196f3; */
+        padding: 5px;
+        height: 50vh;
+        width: 80%;
+        justify-self: center;
+        margin: 5rem;
+        align-items: center;
+      }
+      .container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+      }
+
+      .container p {
+        text-align: center;
+        justify-items: center;
+      }
+
+      .container img {
+        width: 100%;
+        height: auto;
+      }
+      .grid {
+        display: grid;
+        gap: 5px;
+        padding: 5px;
+        height: auto;
+        width: 85%;
+        justify-self: center;
+        justify-content: center;
+        /* margin: 5rem; */
+        background-color: cornflowerblue;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .gridd {
+        display: flex;
+        gap: 5px;
+        /* padding: 5px; */
+        height: auto;
+        width: 80%;
+        justify-self: center;
+        justify-content: center;
+        margin: 5rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .image-container {
+        display: flex;
+        justify-content: center; /* Centers the images horizontally */
+        gap: 20px; /* Adds space between the images */
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        justify-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gridd">
+        <h1>Ten One Tea House Ordering Kiosk</h1>
+        <h2>A Personas & Storyboarding Case Study</h2>
+    
+        <p>
+          This is a case study on the usability, learnability, memorability, and
+          effectiveness of ordering kiosks at establishments. The main focus of this
+          study will be the ordering kiosk at Ten One Tea House which is intended to
+          make it quick and easy for customers to browse the menu and place orders
+          as opposed to waiting in line for the register.
+        </p>
+    </div>
+
+    <div class="container">
+      <img src="images/tenone.png" alt="Ten One Main Menu" class="center" />
+      <!-- <img src="images/hollister_3.png" alt="Hollister Hovered" class="center" style="display:inline-block;"> -->
+      <p>
+        This is the online menu the kiosk provides. Items are categorized by
+        type of drink/flavor to make it easier for users to navigate. Each
+        drink/menu item also has images displayed, so users can see what they
+        can expect to receive after placing their order. Each item also has a
+        description of what the drink is. This is more helpful compared to a
+        menu board where customers can only see item name and price listed.
+      </p>
+    </div>
+    <div class="container">
+      <div class="left" style="text-align: left">
+        <p>
+          To gain a better understanding of how well the kiosk is designed, I
+          interviewed and observed a handful of customers at Ten One Tea House
+          and made notes about how they interacted with the interface. Most
+          users seem fairly comfortable and agreed the kiosk was easy to use. In
+          addition to behavioral notes, I asked each interviewee to fill out a
+          short survey about their experience to collect data about attitudes.
+        </p>
+        <h3>Questions included:</h3>
+        <ul>
+          <li>How often do you get boba?</li>
+          <li>
+            Please rate the difficulty of using this kiosk on a scale of 1-5
+          </li>
+          <li>
+            Why did you choose to order at the kiosk instead of the register?
+          </li>
+          <li>
+            Did you encounter any challenges while placing your order? Is there
+            anything you would change about the design of this kiosk?
+          </li>
+        </ul>
+
+        <P>link to survey is here: <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1aveIyKybcL9bIGnQ6OqEgOJeRtTzUGrV5u8KLV4Jli5dEA/viewform?usp=preview">Questionnaire</a> </P>
+      </div>
+      <div class="right">
+        <img
+          src="images/survey.png"
+          alt="Kiosk Questionaire"
+          class="center other-image"
+        />
+      </div>
+    </div>
+
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <div class="gridd">
+    <h2>Summaries of Users Interviewed are Below</h2>
+    <p>(Click to expand)</p>
+    <button class="accordion">User 1</button>
+    <div class="panel">
+      <ul>
+        <li>
+          Male sophomore at Brown, just came from the gym, in a rush to get to
+          his e-board meeting
+        </li>
+        <li>Experienced user - gets boba 2-3 times a week</li>
+        <li>Ordered quickly, did not double check anything, no hesitation</li>
+        <li>
+          Is very comfortable with ordering on the kiosk (difficulty rating: 1)
+        </li>
+        <li>Order: Strawberry Green Tea</li>
+      </ul>
+    </div>
+
+    <button class="accordion">User 2</button>
+    <div class="panel">
+      <ul>
+        <li>
+          Female sophomore at Brown, spent a lot of time doing work and wanted a
+          sweet treat
+        </li>
+        <li>
+          Prefers the kiosk because it's quick and easy, and close to the
+          entrance. Also tend prefers non-social interactions.
+        </li>
+        <li>Used sidebar categories, but still scrolled through entire menu</li>
+        <li>Casual pace, seems experienced</li>
+        <li>Had difficulty signing name on kiosk after paying</li>
+        <li>Drinks boba a few times a month (difficulty rating: 1)</li>
+        <li>
+          Order: Brown Sugar Milk Tea wtih Boba, Medium, Oat Milk, Light Ice
+        </li>
+      </ul>
+    </div>
+
+    <button class="accordion">User 3</button>
+    <div class="panel">
+      <ul>
+        <li>Male sophomore at Brown, came with User 2</li>
+        <li>Indecisive, drinks boba a few times a month</li>
+        <li>
+          Fast tapper, had to back-track to correct selections due to this
+        </li>
+        <li>
+          Attempted to write order name with finger instead of typing with the
+          keyboard
+        </li>
+        <li>Had difficulty signing name on kiosk after paying</li>
+        <li>Difficulty Rating: 2</li>
+        <li>
+          Order: Peach Lemon Oolong, Medium, Less Ice, 100% Sugar, No Toppings
+        </li>
+      </ul>
+    </div>
+    <button class="accordion">User 4</button>
+    <div class="panel">
+      <ul>
+        <li>
+          Female sophomore at RISD, stopped by while waiting for bus stop with a
+          friend
+        </li>
+        <li>Used sidebar categories to browse</li>
+        <li>Calm, steady selections and pace</li>
+        <li>Selected no recipt but hesistated</li>
+        <li>Rarely gets boba (difficulty rating: 1)</li>
+        <li>Order: Medium Rose Yakult Slush</li>
+      </ul>
+    </div>
+
+    <button class="accordion">User 5</button>
+    <div class="panel">
+      <ul>
+        <li>
+          Female senior at Brown, placed bulk order for her and her friends (4
+          cups)
+        </li>
+        <li>Fast taps - experienced user</li>
+        <li>Messed up order, had to restart</li>
+        <li>Didn't realize ordering at the register was an option</li>
+        <li>Wanted Mango Green Tea (out of stock)</li>
+        <li>Didn't realize Jasmine Green Tea was a menu item (confused)</li>
+        <li>Gets boba once a week on average (difficulty rating: 2)</li>
+        <li>Order: Jasmine Green Tea with Aloe</li>
+      </ul>
+    </div>
+</div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+    <div class="container" style="text-align: center;">
+      <h3>
+        To summarize my findings from these interviews, I curated 3 personas
+        based on the users I interacted with.
+      </h3>
+      <br></br>
+      <div class="image-container">
+        <img
+          src="images/tina.png"
+          alt="Sweet Treat Tina"
+          class="center persona-image"
+        />
+        <img
+          src="images/jeremy.png"
+          alt="Just Here Jeremy"
+          class="center persona-image"
+        />
+        <img
+          src="images/bobby.png"
+          alt="Busy Bobby"
+          class="center persona-image"
+        />
+      </div>
+    </div>
+
+    <br /><br />
+    <br /><br />
+    <br /><br />
+
+    <div class="container" style="text-align: center">
+      <h2>Storyboard of Tina and Jeremy's boba trip to Ten One Tea House</h2>
+      <br /><br />
+      <img
+        src="images/Storyboard.png"
+        alt="Storyboard"
+        class="center other-image"
+      />
+    </div>
+
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+
+    <div class="gridd">
+      <h2>Reflection</h2>
+      <br /><br />
+      <p>
+        Users overalled seemed satisfied with the design of the kiosk. Most agreed it was easy to use. Some said the touch screen sensibility could be better. Kiosk is effective in serving its purpose of streamlining the ordering process at Ten One. 
+      </p>
+    </div>
+  </body>
+</html>
