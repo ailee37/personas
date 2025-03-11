@@ -17,13 +17,13 @@
 .persona-image {
   width: 30%;
   height: auto;
-  max-width: 30%;
+  max-width: 33%;
 }
 
 .other-image {
   width: 10px;
   height: auto;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
